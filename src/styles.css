@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+div.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.background#backside {
+    background-size: cover;
+    transform: scale(1.1);
+    filter: blur(10px);
+}
+
+div.background#frontside {
+    background-size: contain;
+}
+
+
+div#hud-box {
+    width: 480px;
+    height: 170px;
+    background-color: #000000bd;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+div#hud-box img#album {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+div#hud-box p#name {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: 180px;
+}
